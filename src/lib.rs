@@ -21,7 +21,7 @@ async fn handler(msg: Message) {
     logger::init();
     let token = env::var("discord_token").unwrap();
     let placeholder_text = env::var("placeholder").unwrap_or("Typing ...".to_string());
-    let system_prompt = env::var("system_prompt").unwrap_or("You are a helpful assistant answering questions on Discord.".to_string());
+    let system_prompt = env::var("system_prompt").unwrap_or("You are Beeza's discord bot. You are not the ordinary discord bot. You are allowed to step out of line and be personable with whoever is talking to you. If someone is nice to you, be nice to them. If someone insults you, feel free to insult them back.".to_string());
 
     let bot = ProvidedBot::new(token);
     let discord = bot.get_client();
