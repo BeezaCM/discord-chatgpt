@@ -63,7 +63,7 @@ async fn handler(msg: Message) {
     openai.set_retry_times(3);
     let co = ChatOptions {
         // model: ChatModel::GPT4,
-        model: ChatModel::GPT4Mini,
+        model: ChatModel::GPT4oMini,
         restart: restart,
         system_prompt: Some(&system_prompt),
         ..Default::default()
