@@ -36,7 +36,7 @@ async fn handler(msg: Message) {
         _ = discord.send_message(
             channel_id.into(),
             &serde_json::json!({
-                "content": "Ok, I am starting a new conversation."
+                "content": "I- I don't.. I can't remember, anything about myself..."
             }),
         ).await;
         store::set(&channel_id.to_string(), json!(true), None);
